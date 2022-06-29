@@ -7,7 +7,7 @@ const router = async () => {
     const header = null || document.getElementById('header');
     const content = null || document.getElementById('content');
 
-    header.innerHTML = Header();
+    header.innerHTML = await Header();
 };
 
 export default router;
