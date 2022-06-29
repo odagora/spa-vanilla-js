@@ -8,7 +8,11 @@ module.exports = {
         filename: 'main.js'
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        alias: {
+            '@templates': path.resolve(__dirname, 'src/templates'),
+            '@pages': path.resolve(__dirname, 'src/pages'),
+        }
     },
     module: {
         rules: [
